@@ -7,18 +7,57 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src = "assets/javascript/app.js"></script>
+  <link rel= "stylesheet" href = "assets/css/style.css">
   <title>Document</title>
 </head>
 <body>
-  <h1>Random Trivia</h1>
+  <div class = "bg">
+    
+  <div class = "game">
+  <div class = "game-bg">
+  <h1>Music Trivia</h1>
   <button id = "Start">Start</button>
   <p>Time Remaining</p>
   <div id ="time"></div>
   <p id = "question">Question</p>
-  <button id = "answer1">answer</button>
-  <button id = "answer2">answer</button>
-  <button id = "answer3">answer</button>
-  <button id = "answer4">answer</button>
+  <div id = "buttons">
+  <div id = "answer1"></div>
+  <div id = "answer2"></div>
+  <div id = "answer3"></div>
+  <div id = "answer4"></div>
+  </div>
+  
+  <div id = "correct">
+    <li>Correct: </li>
+    <li>0</li>
+  </div>
+  </div> 
+    </div>
+  </div>
   
 </body>
 </html>
+<style>
+.game
+{
+  margin-left: 40%;
+  margin-right:20%;
+  margin-top:20%;
+  
+  
+}
+div.game-bg
+{
+  content:"";
+  top:0;
+  left:0;
+  opacity:0.8;
+  background-color:white;
+  width:350px;
+  z-index: -1;
+}
+.correct p:nth-child(2)
+{
+  color:blue;
+}
+</style>
